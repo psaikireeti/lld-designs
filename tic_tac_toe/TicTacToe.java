@@ -56,7 +56,14 @@ public class TicTacToe {
 
             board.addCoinToBoard(row,column,currentPlayer.getCoin());
 
+            String message = board.checkWinner();
+            if(message != null){
+                System.out.println(message);
+                noWinner = false;
+            }
+
             board.printBoard();
+
 
             players.addLast(currentPlayer);
 

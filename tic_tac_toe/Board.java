@@ -1,6 +1,10 @@
 package tic_tac_toe;
 
+import tic_tac_toe.enums.CoinEnum;
 import tic_tac_toe.piece.Coin;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Board {
     public int size;
@@ -22,6 +26,10 @@ public class Board {
         board[row][column] = coin;
         return true;
 
+    }
+
+    public String checkWinner() {
+        return null;
     }
 
     public void printBoard(){
